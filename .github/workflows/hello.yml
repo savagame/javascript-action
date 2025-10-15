@@ -11,7 +11,7 @@ jobs:
       - run: npm ci
       - name: Run custom action
         id: greet
-        uses: ./ # local action
+        uses: savagame/javascript-action@v1
         with:
           who-to-greet: "Wire"
       - name: Show output

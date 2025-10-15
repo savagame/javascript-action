@@ -5,8 +5,9 @@ import { builtinModules } from "module";
 export default {
   input: "src/index.js",
   output: {
+    esModule: true,
     file: "dist/index.js",
-    format: "cjs",
+    format: "es",
     banner: "#!/usr/bin/env node",
   },
   external: [

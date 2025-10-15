@@ -10,4 +10,4 @@ jobs:
         with:
           who-to-great: "Wire"
       - name: Show output
-        run: echo "Time of greeting: ${{ steps.greet.outputs.time }}"
+        run: echo "Time of greeting ${{ steps.greet.outputs.time }}"

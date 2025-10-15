@@ -9,5 +9,5 @@ jobs:
         uses: ./ # local action
         with:
           who-to-great: "Wire"
-      - name:
+      - name: Show output
         run: echo "Time of greeting: ${{ steps.greet.outputs.time }}"

@@ -8,6 +8,6 @@ jobs:
       - name: Run custom action
         uses: ./ # local action
         with:
-          who-to-great: "Wire"
+          who-to-greet: "Wire"
       - name: Show output
         run: echo "Time of greeting ${{ steps.greet.outputs.time }}"

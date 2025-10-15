@@ -10,7 +10,7 @@ jobs:
           node-version: 20
       - name: Run custom action
         id: greet
-        uses: savagame/javascript-action@v1.1
+        uses: savagame/javascript-action@v1.1.1
         with:
           who-to-greet: "Wire"
       - name: Show output

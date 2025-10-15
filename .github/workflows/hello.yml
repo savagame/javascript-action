@@ -8,10 +8,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm ci
       - name: Run custom action
         id: greet
-        uses: savagame/javascript-action@v1
+        uses: savagame/javascript-action@v1.1
         with:
           who-to-greet: "Wire"
       - name: Show output

@@ -1,0 +1,13 @@
+name: Test Hello action
+on: [push]
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Run custom action
+        uses: ./ # local action
+        with:
+          who-to-great: "Wire"
+      - name:
+        run: echo "Time of greeting: ${{ steps.greet.outputs.time }}"

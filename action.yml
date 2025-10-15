@@ -1,0 +1,14 @@
+name: Say Greeting
+description: This is an action to say Greeting
+
+inputs:
+  who-to-greet:
+    description: Who to greet
+    required: true
+    default: World
+outputs:
+  time:
+    description: The time we greeted you
+runs:
+  using: node20
+  main: dist/index.js

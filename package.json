@@ -1,6 +1,7 @@
 {
   "name": "javascript-action",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -26,6 +27,9 @@
     "@actions/github": "^6.0.1"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.7",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "rollup": "^4.52.4",
     "typescript": "^5.0.0"
   }
 }

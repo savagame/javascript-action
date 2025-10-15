@@ -10,6 +10,7 @@ jobs:
           node-version: 20
       - run: npm ci
       - name: Run custom action
+        id: greet
         uses: ./ # local action
         with:
           who-to-greet: "Wire"
